@@ -4,7 +4,9 @@ import java.awt.*;
 import java.util.Arrays;
 //import net.minecraft.client.main.Main;
 
+
 public class HWIDGenerator {
+
     public static void main(String[] args) throws InterruptedException {
         JPanel jp = new JPanel();
         jp.setLayout(new GridLayout(1, 2));
@@ -22,7 +24,6 @@ public class HWIDGenerator {
         if (hwid1.equals(hwid2)) {
             System.out.println("Афторизация пройдена!");
             //убери те знак " // " чтоб код запускал майн!
-
             //Main.main(concat(new String[] {"--version", "mcp", "--accessToken", "0", "--assetsDir", "assets", "--assetIndex", "1.12", "--userProperties", "{}"}, args));
 
             Thread.sleep(5000);
@@ -32,7 +33,6 @@ public class HWIDGenerator {
             Thread.sleep(5000);
             System.exit(0);
         }
-
 
     }
     public static <T> T[] concat(T[] first, T[] second)
